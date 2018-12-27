@@ -1,0 +1,4 @@
+.vscode
+__pycache__
+configurator.old.py
+configSample.json

@@ -19,3 +19,39 @@
 
 * The default profile must always exist!
 * If the selected profile is the default one, the program will prompt you a message asking you to choose or create another profile
+  
+#### Use example:
+
+##### Config.json
+
+        {
+            "profiles": {
+                "default": {
+                    db:{
+                        "user":"root",
+                        "password":"1234",
+                        "host":"
+                        }
+                    },
+                "profile1": {
+                    db:{
+                        "user":"root",
+                        "password":"1234",
+                        "host":"localhost",
+                        "database":"mydata"
+
+                    }
+                }
+            },
+            "selected_profile": "profile1"
+        }
+    
+##### Python script
+
+    conf = configurator.configure("config.json")
+    
+    print("Connecting to db %s" %conf.db.database)
+
+##### Python output
+
+    >>>> Connecting to db mydata
