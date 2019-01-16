@@ -11,7 +11,6 @@
         {
             "profiles": {
                 "default": {}
-                }
             },
             "selected_profile": "default"
         }
