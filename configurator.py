@@ -1,3 +1,9 @@
+''' Multipurpose configurator '''
+
+__author__ = "Raul Farkas"
+
+
+
 import json, os
 
 class obj(object):
@@ -30,7 +36,7 @@ def check_configuration_validity(config_data):
     else:
         print("The configuration file does not have the correct structure!")
 
-
+    return valid
 
 def configure(file_name):
     ''' Load selected profile and return it after checking its validity'''
@@ -61,3 +67,10 @@ def generate_config_structure(file_name):
             f.write(json.dumps(data, sort_keys=True, indent=4, separators=(',', ': ')))
     except Exception as e:
         print(e)
+
+
+
+if __name__ == "__main__":
+    ''' Execute the interactive part of this script'''
+    print("We are working on these features!")
+   
