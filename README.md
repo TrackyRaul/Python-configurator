@@ -54,3 +54,15 @@
 ##### Python output
 
     >>>> Connecting to db mydata
+
+### Versions
+
+---
+
+- ##### v1.0
+
+    - Introduced the main configuration file interpretation mechanism. You can only work with json files and the result configuration can be used as a nested object.
+
+- ##### v1.1
+
+    - When using this script, the default profile must exist in the config file. If the selected profile is the default one, the program throws an exception, so that the configuration does not get loaded by error with the default configuration.
