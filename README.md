@@ -65,4 +65,4 @@
 
 - ##### v1.1
 
-    - When using this script, the default profile must exist in the config file. If the selected profile is the default one, the program throws an exception, so that the configuration does not get loaded by error with the default configuration.
+    - When using this script, the default profile must exist in the config file. If the selected profile is the default one, the program throws an exception, so that the configuration does not get loaded with wrong data.
