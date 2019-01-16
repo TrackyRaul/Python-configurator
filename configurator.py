@@ -2,9 +2,8 @@
 
 __author__ = "Raul Farkas"
 
-
-
 import json, os
+
 
 class obj(object):
     ''' Create an object based on a given dict'''
@@ -25,6 +24,8 @@ def file_exists(file):
                     exists = True
 
     return exists
+
+
 def check_configuration_validity(config_data):
     ''' Check if the basic configuration structure is valid'''
     valid = False
@@ -37,6 +38,7 @@ def check_configuration_validity(config_data):
         print("The configuration file does not have the correct structure!")
 
     return valid
+
 
 def configure(file_name):
     ''' Load selected profile and return it after checking its validity'''
@@ -67,7 +69,6 @@ def generate_config_structure(file_name):
             f.write(json.dumps(data, sort_keys=True, indent=4, separators=(',', ': ')))
     except Exception as e:
         print(e)
-
 
 
 if __name__ == "__main__":
