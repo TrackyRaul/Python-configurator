@@ -1,6 +1,15 @@
 {
     "profiles": {
-        "default": {}
+        "default": {},
+        "tester":
+        {
+            "db":{
+                "user":"tester",
+                "password":"1234",
+                "host":"localhost",
+                "database":"testing_db"
+            }
+        }
     },
-    "selected_profile": "default"
+    "selected_profile": "tester"
 }
